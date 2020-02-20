@@ -1,30 +1,62 @@
 {
-  "name": "react-intercom",
-  "version": "1.0.15",
-  "description": "A component to initialize Intercom in your application",
-  "main": "lib/index.js",
+  "_args": [
+    [
+      "react-intercom@1.0.14",
+      "/Users/2c4school/Development/onebody/web/client"
+    ]
+  ],
+  "_from": "react-intercom@1.0.14",
+  "_id": "react-intercom@1.0.14",
+  "_inBundle": false,
+  "_integrity": "sha512-9OhCtbzvS+Z9pXx+0AdA/wk/Gu+CDR2tEuf6sDxHpMfhJuELRcGtNgXwYRFNKNqUsUrG8GPq4+su/n2Sp4os3w==",
+  "_location": "/react-intercom",
+  "_phantomChildren": {
+    "fbjs": "0.8.16"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-intercom@1.0.14",
+    "name": "react-intercom",
+    "escapedName": "react-intercom",
+    "rawSpec": "1.0.14",
+    "saveSpec": null,
+    "fetchSpec": "1.0.14"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-intercom/-/react-intercom-1.0.14.tgz",
+  "_spec": "1.0.14",
+  "_where": "/Users/2c4school/Development/onebody/web/client",
+  "author": {
+    "name": "Nathan Hagen"
+  },
+  "bugs": {
+    "url": "https://github.com/nhagen/react-intercom/issues"
+  },
   "dependencies": {
     "prop-types": "15.5.8"
   },
+  "description": "A component to initialize Intercom in your application",
   "devDependencies": {
     "babel-cli": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-0": "^6.1.18"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "babel --presets es2015,react,stage-0 -d lib/ src/",
-    "prepublishOnly": "npm run compile"
-  },
+  "homepage": "https://github.com/nhagen/react-intercom#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "react-intercom",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nhagen/react-intercom.git"
   },
-  "author": "Nathan Hagen",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nhagen/react-intercom/issues"
+  "scripts": {
+    "compile": "babel --presets es2015,react,stage-0 -d lib/ src/",
+    "prepublishOnly": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/nhagen/react-intercom#readme"
+  "version": "1.0.14"
 }

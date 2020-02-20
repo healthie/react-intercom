@@ -15,7 +15,8 @@ export const IntercomAPI = (...args) => {
 
 export default class Intercom extends Component {
   static propTypes = {
-    appID: PropTypes.string.isRequired,
+    appID: PropTypes.string,
+    app_id: PropTypes.string
   };
 
   static displayName = 'Intercom';
@@ -67,13 +68,7 @@ export default class Intercom extends Component {
     window.intercomSettings = { ...otherProps, app_id: appID };
 
     if (window.Intercom) {
-      if (this.loggedIn(this.props) && !this.loggedIn(nextProps)) {
-        // Shutdown and boot each time the user logs out to clear conversations
-        window.Intercom('shutdown');
-        window.Intercom('boot', otherProps);
-      } else {
-        window.Intercom('update', otherProps);
-      }
+      window.Intercom('update', otherProps);
     }
   }
 
@@ -84,14 +79,15 @@ export default class Intercom extends Component {
   componentWillUnmount() {
     if (!canUseDOM || !window.Intercom) return false;
 
-    window.Intercom('shutdown');
+    try {
+        window.Intercom('shutdown')
+    } catch(e) {
+      if (window.rg4js) {
+        window.rg4js('send', e)
+      }
+    }
 
     delete window.Intercom;
-    delete window.intercomSettings;
-  }
-
-  loggedIn(props) {
-    return props.email || props.user_id;
   }
 
   render() {
