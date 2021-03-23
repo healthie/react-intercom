@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      "react-intercom@1.0.14",
+      "/Users/2c4school/Development/onebody/web/client"
+    ]
+  ],
+  "_from": "github:healthie/react-intercom",
+  "_id": "react-intercom@1.0.14",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-intercom",
+  "_phantomChildren": {
+    "fbjs": "0.8.16"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "react-intercom@github:healthie/react-intercom",
+    "name": "react-intercom",
+    "escapedName": "react-intercom",
+    "rawSpec": "github:healthie/react-intercom",
+    "saveSpec": "github:healthie/react-intercom",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:healthie/react-intercom#dea00322a250825b9d16657d8ff83f952c92bc66",
+  "_spec": "react-intercom@github:healthie/react-intercom",
+  "_where": "/Users/2c4school/Development/onebody/web/client",
+  "author": {
+    "name": "Nathan Hagen"
+  },
+  "bugs": {
+    "url": "https://github.com/nhagen/react-intercom/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "15.5.8"
+  },
+  "deprecated": false,
+  "description": "A component to initialize Intercom in your application",
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18"
+  },
+  "homepage": "https://github.com/nhagen/react-intercom#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "react-intercom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhagen/react-intercom.git"
+  },
+  "scripts": {
+    "compile": "babel --presets es2015,react,stage-0 -d lib/ src/",
+    "prepublishOnly": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.14"
+}
