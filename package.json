@@ -5,29 +5,29 @@
       "/Users/2c4school/Development/onebody/web/client"
     ]
   ],
-  "_from": "react-intercom@1.0.14",
+  "_from": "github:healthie/react-intercom",
   "_id": "react-intercom@1.0.14",
   "_inBundle": false,
-  "_integrity": "sha512-9OhCtbzvS+Z9pXx+0AdA/wk/Gu+CDR2tEuf6sDxHpMfhJuELRcGtNgXwYRFNKNqUsUrG8GPq4+su/n2Sp4os3w==",
+  "_integrity": "",
   "_location": "/react-intercom",
   "_phantomChildren": {
     "fbjs": "0.8.16"
   },
   "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "react-intercom@1.0.14",
+    "type": "git",
+    "raw": "react-intercom@github:healthie/react-intercom",
     "name": "react-intercom",
     "escapedName": "react-intercom",
-    "rawSpec": "1.0.14",
-    "saveSpec": null,
-    "fetchSpec": "1.0.14"
+    "rawSpec": "github:healthie/react-intercom",
+    "saveSpec": "github:healthie/react-intercom",
+    "fetchSpec": null,
+    "gitCommittish": null
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-intercom/-/react-intercom-1.0.14.tgz",
-  "_spec": "1.0.14",
+  "_resolved": "github:healthie/react-intercom#dea00322a250825b9d16657d8ff83f952c92bc66",
+  "_spec": "react-intercom@github:healthie/react-intercom",
   "_where": "/Users/2c4school/Development/onebody/web/client",
   "author": {
     "name": "Nathan Hagen"
@@ -35,9 +35,11 @@
   "bugs": {
     "url": "https://github.com/nhagen/react-intercom/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "prop-types": "15.5.8"
   },
+  "deprecated": false,
   "description": "A component to initialize Intercom in your application",
   "devDependencies": {
     "babel-cli": "^6.2.0",
